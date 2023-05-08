@@ -266,17 +266,30 @@ button:active,a.button:active{
 .about {
     display: flex;
     flex-direction: column;
-    gap:50px;
+    gap: 30px;
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
 }
+.about-me{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-me__skill{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .about-list{
     list-style-type: none;
+    
 }
 .about-list li{
     display: block;
     text-align: center;
+    font-weight: 700;
 }
 
 
@@ -286,13 +299,13 @@ button:active,a.button:active{
 }
 
 .skill-table__head--item {
-    background-color: lightgray;
+    background-color: darkgray;
     font-weight: 700;
     margin: 0 auto;
 }
 
 .skill-table__body--item {
-    background-color: lightgray;
+    background-color: darkgray;
     font-weight: 400;
     margin: 0 auto;
 }
