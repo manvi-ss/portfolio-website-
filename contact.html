@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon-32x32.png">
+    <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.production.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Manvi's Portfolio</title>
 </head>
 
 <body>
-    <header class="page-header divider">
+    <header class="page-header">
         <!-- Add you logo here-->
         <img src="img/logo.png" class="page-header__item" alt="Personal logo of Manvi.">
         <nav class="main-navigation page-header__item container pullUp">
@@ -48,18 +48,20 @@
                 10829 Berlin <br>
                 Deutschland <br>
                 <br>
-                <a href="Tel: +49-15210417849">Tel: +49-15210417849</a><br>
+                <a href="Tel:+49-15210417849">Tel: +49-15210417849</a><br>
                 <a href="introtowebdev@careerfoundry.com">Email: introtowebdev(at)careerfoundry.com</a> <br>
                 <a href="mailto:introtoweb@careerfoundry.com"> <br> Contact me</a>
             </p>
-            <form action="" method="post" id="contact-form">
+            <form action="#" method="post" id="contact-form">
                 <label class="standard-label" for="contact-email">E-mail: </label>
                 <input type="email" required="required" id="contact-email">
 
                 <label class="standard-label" for="contact-tel">Telephone: </label>
                 <input type="tel" required="required" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
                 <label class="standard-label" for="contact-message">Message: </label>
                 <textarea maxlength="240" id="contact-message" required></textarea>
+
                 <button type="button"> Send Message </button>
             </form>
         </article>
