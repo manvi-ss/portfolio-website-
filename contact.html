@@ -40,43 +40,50 @@
     <hr>
     <br>
 
-    <main class="contact">
-        <article>
+    <main>
+        <article class="contact">
             <h1>Contact Me</h1>
-            <p class="second_para"> Manvi Manvi <br>
-                Bautzener Str. <br>
-                10829 Berlin <br>
-                Deutschland <br>
+            <p class="second_para"> Manvi <br>
+                Based in Berlin, Deutschland <br>
                 <br>
-                <a href="Tel:+49-15210417849">Tel: +49-15210417849</a><br>
-                <a href="mailto:manvi.oct23@gmail.com">Email: manvi.oct23@gmail.com </a> <br>
-                <a href="mailto:manvi.oct23@gmail.com"> <br> Contact me</a>
+                <a href="mailto:manvi.oct23@gmail.com"><b>Contact me</b></a>
             </p>
-            <form action="#" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" required="required" id="contact-email">
 
-                <label class="standard-label" for="contact-tel">Telephone: </label>
-                <input type="tel" required="required" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-                <label class="standard-label" for="contact-message">Message: </label>
-                <textarea maxlength="240" id="contact-message" required></textarea>
+            <div class="div__contact-form">
+                <form class="contact-form" action="" method="post">
+                    <div class="contact-form__email">
+                        <label for="email" class="standard-label">Email<span class="required">*</span>&nbsp
+                        </label>
+                        <input id="email" class="div__contact-form--input" />
+                    </div>
+                    <div>
+                        <label for="phone" class="standard-label">Phone </label>&nbsp
+                        <input type="tel" name="phone" id="phone" class="div__contact-form--input" />
+                    </div>
+                    <div>
+                        <label for="message" class="standard-label">Message<span class="required">*</span>
+                        </label>
+                        <textarea name="message" minlength="2" maxlength="240" cols="30" rows="10" id="message" required
+                            placeholder="Enter message here" class="div__contact-form--input"></textarea>
+                    </div>
 
-                <button type="button"> Send Message </button>
-            </form>
+                    <button type="submit" class="button" id="contact-form__submit">Send message</button>
+                </form>
+            </div>
         </article>
     </main>
-
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
             <a href="https://github.com/manvi-ss" target="_blank"><img src="./img/github.svg" alt="Github"></a>
-            <a href="http://via.placeholder.com" target="_blank"><img src="./img/twitter-1.svg" alt="Twitter"></a>
+            <a href="https://twitter.com/home" target="_blank"><img src="./img/twitter-1.svg" alt="Twitter"></a>
             <a href="http://www.linkedin.com/in/manvi-manvi-093172274" target="_blank"><img src="./img/linkedin1.svg"
                     alt="LinkedIn"></a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -6,14 +6,14 @@ Secondary Color (Orange): #e0b354;
 
 /* Universal and Element Styles */
 :root {
-  --primary-color:#00473f;
+  --primary-color:#002924;
   --secondary-color: #5be054;
   --dark-grey: #2b2b2b;
   --light-grey: lightgray;
   --text-color: black;
   --visited-link: #3d0000;
   --active-link: #78489c;
-  --button-color: #00473f;
+  --button-color: #002924;
   --button-text-clr: white;
   --box-width: 300px;
   --font-size: 16px;
@@ -109,6 +109,7 @@ img.page-header__item {
 /* targets the navigation list */
 
 nav.main-navigation {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -122,6 +123,7 @@ nav.main-navigation {
 }
 
 .navigation-list__item {
+ 
   white-space: nowrap;
 }
 
@@ -171,6 +173,7 @@ nav.main-navigation {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .profile__portrait {
@@ -216,8 +219,48 @@ a.profile__text:focus {
 }
 
 /* styling in contact page */
+.contact-form{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+}
+.div__contact-form {
+  
+  padding: 40px 20px;
+}
+.div__contact-form, .div__contact-form a {
+  color: #000000;
+}
+.div__contact-form form {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.div__contact-form input, textarea, .error-message {
+  display:inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.error-message {
+  font-size: 16px;
+  padding: 3px;
+  background-color: red;
+  width: 20%;
+  padding-left: 7px;
+}
+
+form .button:last-of-type {
+  display: block;
+  margin: 20px auto;
+}
 
 .contact {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -263,9 +306,14 @@ a.button:active {
 }
 
 .about-me {
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   max-width: 500px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
+}
+.about-me__item{
+  text-align: center;
+
 }
 
 .about-me__skill {
@@ -280,8 +328,8 @@ a.button:active {
 
 .about-list li {
   display: block;
-  text-align: center;
-  font-weight: 700;
+  text-align: justify;
+  font-weight:500;
 }
 
 .skill-tabel {
@@ -290,13 +338,13 @@ a.button:active {
 }
 
 .skill-table__head--item {
-  background-color: darkgray;
+  background-color:  #af7799f7;
   font-weight: 700;
   margin: 0 auto;
 }
 
 .skill-table__body--item {
-  background-color: darkgray;
+  background-color:  #af7799f7;
   font-weight: 400;
   margin: 0 auto;
 }
@@ -317,8 +365,23 @@ a.button:active {
 /* end grid fallback */
 .meet_image{
   width: 100%;
-  
 }
+.pokedex_image{
+  width: 100%;
+}
+.chat_image{
+  width: 100%;
+}
+.api_image{
+  width: 100%;
+}
+.react_image{
+  width: 100%;
+}
+.angular_image{
+  width: 100%;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;/* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
@@ -328,17 +391,19 @@ a.button:active {
   }
 
   .grid__item {
-    background-color: rgb(237, 221, 95);
+    background-color: #af7799f7;
+    text-align: justify;
+    border-radius: 18px;
     width: auto;
     min-height: auto;
     margin: 0;
     padding: 10px;
   }
 
-  .grid__item:last-child {
+  /* .grid__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
-  }
+  } */
   
 }
 
@@ -399,6 +464,7 @@ a.button:active {
 
 /* page footer */
 .page-footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   clear: both;
   display: flex;
   flex-direction: column;
